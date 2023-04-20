@@ -1,0 +1,639 @@
+*{
+    font-family: "Poppins";
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    padding: 64px 128px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+i{
+    color: #ffc108;
+}
+
+h1{
+    font-weight: 600;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 0 16px 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+#menu-btn{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-btn:hover{
+    color: #ffc108;
+}
+
+
+nav > a{
+    margin-left: 12px;
+}
+
+nav > a:hover{
+    color: #ffc108;
+}
+
+.btn{
+    background-color: #ffc108;
+    color: white;
+    padding: 8px 24px;
+}
+
+.btn btn-alt{
+    background-color: white;
+    color: black;
+    margin-right: 16px;
+    border: 2px solid #ffc108;
+}
+
+#landing{
+    padding: 16.5rem 0;
+    background: url(./img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#landing p{
+    font-size: larger;
+    margin-bottom: 25px;
+    margin-top: -26px;
+    color: white;
+    font-weight: 600;
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: black;
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.content-title{
+    font-size: 50px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+}
+
+.animal-detail{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    column-gap: 25px;
+    margin-top: 70px;
+}
+
+.image{
+    width: 100%;
+    /* height: 400px; */
+    margin-bottom: 80px;
+    /* margin-left: 30px; */
+    transition: transform 200ms ease-in-out;
+}
+
+
+
+#information-animal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+#information-animal img{
+    width: 500px;
+    height: 500px;
+}
+
+.detail-hewan{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    column-gap: 128px;
+    text-align: center;
+}
+
+.detail-hewan-item{
+    box-shadow: 2px 4px 4px #979797;
+}
+
+.detail-hewan-item:hover{
+    transition: transform 200ms ease-in-out;
+}
+
+
+.hewan-card{
+    width: 200px;
+    height: 200px;
+}
+
+/*ABOUT PAGE*/
+#landing-about{
+    align-items: center;
+    justify-content: center;
+}
+
+#landing-about img{
+    width: 500px;
+    height: 500px;
+}
+
+.member-detail{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 110px;
+    text-align: center;
+}
+
+.image-member{
+    width: 350px;
+    height: 400px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.image-member:hover{
+    transform: scale(1.15);
+}
+
+/*CONTACT US*/
+.contact-detail{
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+    column-gap: 128px;
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #FFC108;
+    padding: 64px 32px;
+}
+
+form h1{
+    font-size: 32px;
+    text-align: center;
+}
+
+form button{
+    border: none;
+}
+
+form button:hover{
+    cursor: pointer;
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 32px;
+    grid-template-areas: "name subject"
+                          "email phone"
+                          "message message";
+} 
+
+#input-name{
+    grid-area: name;
+}
+
+#input-subject{
+    grid-area: subject;
+}
+
+#input-email{
+    grid-area: email;
+}
+
+#input-phone{
+    grid-area: phone;
+}
+
+#input-message{
+    grid-area: message;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group label{
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.input-group input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+}
+
+.input-group input:focus{
+    border-bottom: 2px solid #FFC108;
+}
+
+.button {
+    background-color: #FFC108;
+    color: white;
+    padding: 8px 24px;
+}
+
+
+
+
+footer{
+    padding: 16px 128px;
+    background-color: #ffc108;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-size: 17px;
+}
+
+.social-icon{
+    display: flex;
+    gap: 32px;
+    width: 30px;
+    height: 30px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    #landing {
+        padding: 0;
+        background-size: contain;
+        background-position: top;
+        height: 425px;
+    }
+    .animal-detail{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media screen and (max-width: 576px) { 
+
+    .content-title{
+        font-size: 30px;
+        color: #65350F;
+        -webkit-text-stroke-width: 0px;
+    }
+
+    #landing p{
+        font-size: smaller;
+        margin-bottom: 15px;
+        color: #65350F;
+        -webkit-text-stroke-width: 0px;
+    }
+
+    .animal-detail{
+        column-gap: 45px;
+    }
+
+    .logo{
+        font-size: 1rem;
+    }
+
+    a{
+        font-size: 10px;
+    }
+
+    section{
+        padding: 64px 90px;
+    }
+
+    footer{
+        padding: 10px 58px;
+    }
+
+    footer h1{
+        margin-top: 5px;
+    }
+
+    #about h1{
+        text-align: center;
+    }
+
+    #header{
+        padding: 10px 40px;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    #information-animal{
+        text-align: justify;
+        flex-direction: column;
+    }
+
+    #information-animal img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .detail-hewan{
+        display: grid;
+    }
+
+    .detail-hewan-item p{
+        font-size: 13px;
+    }
+
+    .detail-hewan{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 60px;
+    }
+
+    .detail-hewan-item{
+        width: max-content;
+        margin-bottom: 30px;
+    }
+
+    #suara-hewan h1{
+        font-size: 25px;
+    }
+
+    #landing-about img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #landing-about p{
+        text-align: center;
+        font-size: smaller;
+    }
+
+    .member-detail{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    form h1{
+        font-size: 27px;
+    }
+    
+    form{
+        padding: 24px 22px;
+    }
+
+    #contact-detail iframe{
+        display: none;
+    }
+
+    .input-group label{
+        font-size: 17px;
+    }
+
+    .input-group input{
+        font-size: 15px;
+    }
+
+    .contact-detail{
+        flex-direction: column;
+    }
+
+    .button {
+        background-color: #FFC108;
+        color: white;
+        padding: 8px 24px;
+    }
+}
+/* @media screen and (min-width: 1240px) {
+    .image{
+        margin-left: 15px;
+        width: 230px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .image{
+        margin-left: 15px;
+        width: 200px;
+        height: 300px;
+    }
+
+    .animal-detail{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 70px;
+        margin-top: 60px;
+    }
+
+    .content-title{
+        font-size: 40px;
+    }
+}
+
+/* @media screen and (min-width: 990px) {
+    .image{
+        margin-left: 10px;
+        width: 200px;
+        height: 300px;
+    }
+
+    .animal-detail{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 70px;
+        margin-top: 50px;
+    }
+
+    .content-title{
+        font-size: 30px;
+    }
+} */
+
+/* @media screen and (max-width:985px) {
+    .image{
+        margin-left: 10px;
+        width: 200px;
+        height: 300px;
+    }
+
+    .animal-detail{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 70px;
+        margin-top: 50px;
+    }
+
+    .content-title{
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (min-width:970px) {
+    .image{
+        margin-left: 10px;
+        width: 200px;
+        height: 300px;
+    }
+
+    .animal-detail{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 70px;
+        margin-top: 50px;
+    }
+
+    .content-title{
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (min-width:940px) {
+    .image{
+        margin-left: 10px;
+        width: 200px;
+        height: 300px;
+    }
+
+    .animal-detail{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 70px;
+        margin-top: 50px;
+    }
+
+    .content-title{
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (min-width:800px) {
+    .image{
+        margin-left: 10px;
+        width: 200px;
+        height: 300px;
+    }
+
+    .animal-detail{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 70px;
+        margin-top: 50px;
+    }
+
+    .content-title{
+        font-size: 30px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+    }
+    
+    #landing p{
+        font-size: smaller;
+    }
+}
+
+@media screen and (min-width:720px) {
+    .image{
+        margin-left: 10px;
+        width: 175px;
+        height: 260px;
+    }
+
+    .animal-detail{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 70px;
+        margin-top: 50px;
+    }
+
+    .content-title{
+        font-size: 30px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+    }
+    
+    #landing p{
+        font-size: smaller;
+    }
+
+    .content-header{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width:625px) {
+    .image{
+        align-items: center;
+        width: 175px;
+        height: 260px;
+    }
+
+    .animal-detail{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 70px;
+        margin-top: 50px;
+    }
+
+    .content-title{
+        font-size: 30px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+    }
+    
+    #landing p{
+        font-size: smaller;
+    }
+
+    .content-header{
+        margin-left: 20px;
+    }
+}
+
+
+ */
